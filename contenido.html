@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTENIDO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAV por encima del overlay -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="contenido.html">Contenido</a>
+        <a href="galeria.html">Galería</a>
+        <a href="equipo.html">Sobre Nosotros</a>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero3">
+        <div class="overlay">
+            <h1>CONTENIDO</h1>
+            <p>Todo lo que encontrarás como resultado a un bello y arduo proceso creativo por parte del equipo</p>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PRINCIPAL DEL CUENTO -->
+    <section id="cuento-infantil" style="padding-bottom: 20px;">
+    <div class="seccion-amarilla">
+        <div class="texto">
+            <h1>Cuento Infantil</h1>
+            <p>Había una vez un pueblo blanco y soleado llamado Armero, lleno de casas, risas y familias. Esta es la historia del hogar feliz que vivió en el corazón de sus niños, para que su memoria jamás se olvide.</p>
+        <button class="boton amarillo" onclick="abrirModal('miModal')">ver contenido</button>
+        </div>
+        <div class="img">
+            <img src="recursos/imagenes/faltante.jpg" alt="falta">
+        </div>
+    </div>
+     <div id="miModal" class="modal modal-3">
+        <div class="modal-contenido">
+            <div class="modal-header">
+                <h2>📖 La Niña y la Montaña Dormilona</h2>
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            </div>
+         <div class="modal-body">
+            <h2>La Niña y la Montaña Dormilona</h2>
+            <p>En un valle verde bajo el cobijo de una gran montaña nevada, vivía una niña llamada Laura. Su pueblo, Armero, era alegre y lleno de flores, donde todos se conocían y el sol brillaba casi siempre. Laura jugaba con sus amigos y ayudaba a su familia en los cultivos, feliz junto a su gente y su perro.</p><br>
+            <p>Pero la montaña, que todos creían dormida para siempre, a veces gruñía. Una noche, después de muchas lluvias, la tierra tembló con más fuerza y un sonido profundo llenó el aire. La montaña había despertado, y un río oscuro de lodo y piedras comenzó a bajar por sus laderas, cambiando todo a su paso.</p><br>
+            <p>La familia de Laura, como sus vecinos, trató de ponerse a salvo cuando escucharon las campanas de la iglesia y las voces de alarma. Fue una noche larga y confusa, donde el miedo y la valentía se mezclaron. A pesar del esfuerzo de muchos, el río de lodo era muy poderoso y cubrió las calles y las casas.</p><br>
+            <p>Con la luz del día, llegó la ayuda. Hombres y mujeres valientes de otros pueblos, con botes y herramientas, trabajaron sin descanso para rescatar a los atrapados. Eran como luciérnagas de esperanza en medio de la tristeza, sacando a las personas del barro con mucho cuidado.</p><br>
+            <p>Aunque fue un tiempo muy difícil, la solidaridad brilló más que nunca. La historia de Armero nos enseña la importancia de escuchar a la naturaleza y de estar preparados, pero sobre todo, nos recuerda que, cuando hay tragedia, la bondad de la gente que ayuda es la fuerza más grande.</p><br>
+            <p>Hoy, un campo tranquilo y placero cubre el recuerdo de aquel pueblo, y las flores crecen allí en señal de paz. La montaña duerme de nuevo, y desde entonces, hemos aprendido a cuidarnos mejor los unos a los otros, para que la esperanza nunca se apague.</p><br>
+            <p><strong>fin "escrito por el Programador"</strong></p>
+       </div>
+        </div>
+    </div>
+</section>
+
+    <!-- SECCIÓN PODCAST -->
+    <section id="podcast" style="padding-bottom: 20px;">
+    <div class="seccion-amarilla">
+        <div class="img">
+            <img src="recursos/imagenes/faltante.jpg" alt="falta">
+        </div>
+        <div class="texto">
+            <h1>Podcast</h1>
+            <p>Antes de la tragedia, estuvo la vida. 'Recuerdos de Armero' es un viaje sonoro a la ciudad blanca, a través de las voces de quienes la llamaron hogar. Porque su historia es más que un final.</p>
+        <button class="boton amarillo" onclick="abrirModal2()">🎵 PODCAST</button>
+        </div>
+    </div>
+    <div id="miModal2" class="modal modal-3">
+        <div class="modal-contenido">
+            <div class="modal-header">
+                <h2>🎵 PODCAST</h2>
+                <span class="cerrar" onclick="cerrarModal2()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <!-- Audio 1 -->
+                <div class="audio-item">
+                    <div class="audio-title">
+                        <span class="icon">🎵</span>
+                        Armero, lo que nunca se olvida-Capítulo 1
+                    </div>
+                    <audio id="audio1" class="audio-player" controls>
+                        <source src="recursos/sonoros/Armero, lo que nunca se olvida-Capítulo 1.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="audio-info">
+                        <span>MP3 • 9.2 mb</span>
+                        <span class="audio-duration">10:01</span>
+                    </div>
+                </div>
+
+                <!-- Audio 2 -->
+                <div class="audio-item">
+                    <div class="audio-title">
+                        <span class="icon">🎵</span>
+                        Armero, lo que nunca se olvida-Capítulo 2
+                    </div>
+                    <audio id="audio2" class="audio-player" controls>
+                        <source src="recursos/sonoros/Armero, lo que nunca se olvida-Capitulo 2.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="audio-info">
+                        <span>MP3 • 12.4 mb</span>
+                        <span class="audio-duration">13:34</span>
+                    </div>
+                </div>
+
+                <!-- Audio 3 -->
+                <div class="audio-item">
+                    <div class="audio-title">
+                        <span class="icon">🎵</span>
+                        Armero, lo que nunca se olvida-Capítulo 3
+                    </div>
+                    <audio id="audio3" class="audio-player" controls>
+                        <source src="recursos/sonoros/Armero lo que nunca se olvida capítulo 3.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="audio-info">
+                        <span>MP3 • 32 mb</span>
+                        <span class="audio-duration">35:04</span>
+                    </div>
+                </div>
+                <!-- Información adicional -->
+                <div style="background: #e7f3ff; padding: 15px; border-radius: 8px; margin-top: 20px; border-left: 4px solid #3498db;">
+                    <h4 style="color: #3498db; margin: 0 0 10px 0;">💡 Información</h4>
+                    <p style="margin: 0; color: #2c3e50; font-size: 0.9em;">
+                        Puedes reproducir múltiples audios simultáneamente. Cada reproductor tiene controles independientes para play, pause, volumen y progreso.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- SECCIÓN NOVELA VISUAL -->
+    <section id="Novela" style="padding-bottom: 20px;">
+    <div class="seccion-roja">
+        <div class="texto">
+            <h1>Novela Visual</h1>
+            <p>Antes de la tragedia, existió un hogar.<br> Esta experiencia revive, a través de miradas y voces, el Armero que fue: sus calles, su gente y su memoria. <br>Un viaje para honrar no solo lo que se perdió, sino todo lo que una vez vivió.</p>
+         <a href="https://jhone115.github.io/recuerdos-de-armero/" target="_blank" class="boton rojo">vive la experiencia</a>
+        </div>
+        <div class="img">
+            <img src="recursos/imagenes/novela.png" alt="novela">
+        </div>
+    </div>
+   
+</section>
+
+    <!-- SECCIÓN PERIÓDICO -->
+    <section id="periódico" style="padding-bottom: 20px;">
+    <div class="seccion-zaul">
+        <div class="img">
+            <img src="recursos/imagenes/faltante.jpg" alt="falta">
+        </div>
+        <div class="texto">
+            <h1>Periódico</h1>
+            <p>PROYECTO 'RECUERDOS DE ARMERO': UNA RECONSTRUCCIÓN MEMORABLE. Iniciativa multidisciplinaria busca rescatar el legado de la ciudad blanca, priorizando su identidad como hogar sobre la tragedia que la afectó.</p>
+        <button class="boton azul" onclick="abrirModal('modal2')">ver contenido</button>
+        </div>
+    </div>
+    <div id="modal2" class="modal modal-2">
+        <div class="modal-contenido">
+            <div class="modal-header">
+                <h2>EL TOLEDANO</h2>
+                <h3>28 de noviembre de 2024</h3>
+                <span class="cerrar" onclick="cerrarModal('modal2')">&times;</span>
+            </div>
+         <div class="modal-body">
+            <h2><strong>A 40 años de la tragedia: Armero, la herida abierta de Colombia</strong></h2>
+            <p>Hace exactamente cuatro décadas, en la noche del 13 de noviembre de 1985, el volcán Nevado del Ruiz despertó de su letargo. Una erupción moderada, pero suficiente para derretir su glaciar, generó enormes lahares que bajaron por sus laderas a 60 km/h. Armero, un próspero municipio del Tolima, quedó en el camino del flujo de lodo, rocas y escombros que lo arrasaría por completo en cuestión de minutos.</p><br>
+            <p>La magnitud de la tragedia fue dantesca. Se estima que más de 20,000 de sus 29,000 habitantes perdieron la vida, mientras que miles resultaron heridos y damnificados. La imagen de Omayra Sánchez, la niña de 13 años atrapada durante tres días entre el fango y los restos de su casa, le dio la vuelta al mundo y se convirtió en el símbolo de un duelo nacional y de una respuesta estatal que fue calificada como lenta e insuficiente.</p><br>
+            <p>Las advertencias no faltaron. Científicos del Observatorio Vulcanológico de Manizales habían alertado sobre la alta probabilidad de una erupción y los riesgos inminentes para Armero y otras poblaciones. Sin embargo, la falta de un protocolo de emergencia claro, la descoordinación entre autoridades y la incredulidad de parte de la comunidad impidieron una evacuación oportuna.</p><br>
+            <p>Hoy, cuatro décadas después, el país recuerda con dolor a las víctimas. En el lugar donde estuvo Armero se erige un memorial y un camposanto. Las lecciones aprendidas llevaron a la creación del Sistema Nacional para la Gestión del Riesgo de Desastres, buscando que una tragedia de tal magnitud no se repita. No obstante, para los sobrevivientes y familiares, el dolor persiste, y su lucha por mantener viva la memoria continúa, recordándonos que la naturaleza exige siempre respeto y preparación.</p><br>
+            <p><strong>"escrito por el Programador el 28/11/2025"</strong></p>
+       </div>
+        </div>
+    </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>MEMORIAS DE<br>ARMERO</h3>
+            </div>
+            <div>
+                <h3>inicio</h3>
+                <a href="index.html#hero">inicio</a><br>
+                <a href="index.html#Proceso Creativo">video</a><br>
+                <a href="index.html#radio">la radio</a><br>
+                <a href="index.html#logo">el chat</a>
+            </div>
+            <div>
+                <h3>contenido</h3>
+                <a href="#hero">inicio</a><br>
+                <a href="#cuento-infantil">cuento-infantil</a><br>
+                <a href="#podcast">podcast</a><br>
+                <a href="#Novela">Novela Visual</a><br>
+                <a href="#periódico">Periódico</a>
+            </div>
+            <div>
+                <h3>equipo</h3>
+                <a href="equipo.html#hero">inicio</a><br>
+                <a href="equipo.html#equipo">equipo</a><br>
+                <a href="equipo.html#colaboradores">colaboradores</a>
+            </div>
+            <div>
+                <h3>Galería</h3>
+                <a href="galeria.html#hero">inicio</a><br>
+                <a href="galeria.html#galeria">Página</a>
+            </div>
+        </div>
+    </footer>
+ <script src="modal.js"></script>
+</body>
+</html>
