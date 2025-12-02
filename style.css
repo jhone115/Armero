@@ -844,3 +844,61 @@
     font-size: 40px;
     cursor: pointer;
 }
+
+.modal-body img {
+    display: block; /* Elimina espacio en línea */
+    max-width: 100%; /* Máximo del contenedor */
+    height: auto; /* Mantiene proporción */
+    width: auto; /* Mantiene ancho original */
+    margin: 20px auto; /* Centra las imágenes con margen */
+}
+
+/* Modal específico para periódicos */
+.modal-periodico .modal-dialog {
+    max-width: 95vw; /* Usa casi toda la pantalla */
+    width: 95vw; /* Ancho fijo */
+    margin: 2.5vh auto; /* Centrado vertical */
+}
+
+.modal-periodico .modal-content {
+    max-height: 95vh; /* Altura máxima */
+    height: 95vh; /* Altura fija */
+}
+
+.modal-periodico .modal-body {
+    height: calc(95vh - 120px); /* Ajusta según header/footer */
+    overflow-y: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.modal-periodico img {
+    display: block; /* Elimina espacio en línea */
+    max-width: 100%; /* Máximo del contenedor */
+    height: auto; /* Mantiene proporción */
+    width: auto; /* Mantiene ancho original */
+    margin: 20px auto; /* Centra las imágenes con margen */
+}
+
+/* Si quieres que sean exactamente su tamaño original */
+.modal-periodico img:not(.ajustada) {
+    max-width: none;
+    width: auto !important;
+}
+
+.modal-cuento .modal-body {
+    max-height: 80vh; /* Altura máxima */
+    overflow-y: auto; /* Scroll vertical */
+    padding: 20px;
+}
+
+.modal-cuento img {
+    display: block;
+    width: 70%;
+    max-width: 600px;
+    height: auto;
+    margin: 15px auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
