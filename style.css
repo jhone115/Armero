@@ -65,7 +65,7 @@
 .hero3 {
         width: 100%;
         height: 100vh;
-        background-image: url("recursos/imagenes/DSC_0008.jpg"); /* Cambia la imagen */
+        background-image: url("recursos/imagenes/DSC_0008.jpg");
         background-size: cover;
         background-position: center;
         display: flex;
@@ -93,7 +93,7 @@
     .hero4 {
         width: 100%;
         height: 100vh;
-        background-image: url("recursos/imagenes/dsc_0147.jpg"); /* Cambia la imagen */
+        background-image: url("recursos/imagenes/dsc_0147.jpg");
         background-size: cover;
         background-position: center;
         display: flex;
@@ -121,7 +121,7 @@
     .hero2 {
         width: 100%;
         height: 100vh;
-        background-image: url("recursos/imagenes/dsc_0054.jpg"); /* Cambia la imagen */
+        background-image: url("recursos/imagenes/dsc_0054.jpg");
         background-size: cover;
         background-position: center;
         display: flex;
@@ -149,7 +149,7 @@
     .hero {
     width: 100%;
     height: 100vh;
-    background-image: url("recursos/imagenes/DSC_0011.jpg"); /* Cambia la imagen */
+    background-image: url("recursos/imagenes/DSC_0011.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -232,7 +232,7 @@
     padding: 30px;
     border-radius: 6px;
     width: 100%;
-    box-sizing: border-box; /* Importante: incluye padding en el cálculo del ancho */
+    box-sizing: border-box;
 }
 
 .seccion-amarilla h1 {
@@ -261,8 +261,8 @@
 .seccion-amarilla .img img {
     width: 400px;
     height: 300px;
-    max-width: 100%; /* Para que sea responsive */
-    object-fit: cover; /* Para mantener proporciones */
+    max-width: 100%;
+    object-fit: cover;
 }
 .seccion-zaul {
     display: flex;
@@ -273,7 +273,7 @@
     padding: 30px;
     border-radius: 6px;
     width: 100%;
-    box-sizing: border-box; /* Importante: incluye padding en el cálculo del ancho */
+    box-sizing: border-box;
 }
 
 .seccion-zaul h1 {
@@ -302,8 +302,8 @@
 .seccion-zaul .img img {
     width: 400px;
     height: 300px;
-    max-width: 100%; /* Para que sea responsive */
-    object-fit: cover; /* Para mantener proporciones */
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .seccion-roja {
@@ -315,7 +315,7 @@
     padding: 30px;
     border-radius: 6px;
     width: 100%;
-    box-sizing: border-box; /* Importante: incluye padding en el cálculo del ancho */
+    box-sizing: border-box;
 }
 
 .seccion-roja h1 {
@@ -344,8 +344,8 @@
 .seccion-roja .img img {
     width: 400px;
     height: 300px;
-    max-width: 100%; /* Para que sea responsive */
-    object-fit: cover; /* Para mantener proporciones */
+    max-width: 100%;
+    object-fit: cover;
 }
 
     .seccion-azul h1 {
@@ -415,7 +415,6 @@
         margin: 5px 0;
     }
 
-    /* EQUIPO */
     .equipo {
         padding: 80px 10%;
         text-align: center;
@@ -428,7 +427,6 @@
         margin-bottom: 40px;
     }
 
-    /* Jefes */
     .grid-jefes {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -464,7 +462,6 @@
         opacity: 0.8;
     }
 
-    /* Colaboradores 4x2 */
     .grid-colaboradores {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -487,7 +484,6 @@
         font-size: 14px;
     }
 
-    /* Responsive */
     @media (max-width: 900px) {
         .grid-jefes {
             grid-template-columns: 1fr;
@@ -524,29 +520,29 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 20px; /* Espaciado externo en todas las direcciones */
-    padding: 30px; /* Espaciado interno en todas las direcciones */
-    transform: scale(1.2); /* Aumenta el tamaño general (opcional) */
+    margin: 20px;
+    padding: 30px;
+    transform: scale(1.2);
 }
 
 .director img {
-    width: 150px; /* Imagen más grande */
-    height: 150px; /* Imagen más grande */
+    width: 150px;
+    height: 150px;
     background: #e5d8ff;
     border-radius: 50%;
-    padding: 25px; /* Más padding para icono más grande */
+    padding: 25px;
     margin-bottom: 20px;
     object-fit: cover;
 }
 
 .director h3 {
     font-weight: 600;
-    font-size: 22px; /* Texto más grande */
+    font-size: 22px;
     margin-bottom: 8px;
 }
 
 .director p {
-    font-size: 16px; /* Texto más grande */
+    font-size: 16px;
     opacity: 0.8;
 }
 
@@ -566,8 +562,6 @@
         .azul { color: blue; }
         .amarillo { color: rgb(255, 209, 84); }
 
-                /* Estilos de la modal */
-        /* Estilos de la modal CORREGIDOS */
         .modal {
             display: none;
             position: fixed;
@@ -628,8 +622,7 @@
             margin: 0;
             display: inline-block;
         }
-        
-        /* Estilos para el contenido largo */
+
         .modal-body h3 {
             color: #667eea;
             border-bottom: 2px solid #667eea;
@@ -646,8 +639,7 @@
             margin-bottom: 15px;
             color: #495057;
         }
-        
-        /* Personalizar scrollbar */
+
         .modal-body::-webkit-scrollbar {
             width: 8px;
         }
@@ -666,7 +658,6 @@
             background: #764ba2;
         }
 
-                /* Estilos para los audios */
         .audio-item {
             background: #f8f9fa;
             border-radius: 10px;
@@ -739,8 +730,7 @@
             background: #ccc;
             cursor: not-allowed;
         }
-        
-        /* Personalizar scrollbar */
+
         .modal-body::-webkit-scrollbar {
             width: 8px;
         }
@@ -758,8 +748,7 @@
         .modal-body::-webkit-scrollbar-thumb:hover {
             background: #764ba2;
         }
-        
-        /* Iconos */
+
         .icon {
             font-style: normal;
             margin-right: 5px;
@@ -767,7 +756,6 @@
         .modal-2 .modal-header { background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); }
         .modal-3 .modal-header { background: linear-gradient(135deg, #f9ce0d 0%, #ffe77a 100%); }
 
-        /* ----- GALERÍA ----- */
 .galeria {
     width: 90%;
     margin: 80px auto;
@@ -814,8 +802,6 @@
     color: #444;
 }
 
-
-/* ----- MODAL ----- */
 .modal1 {
     display: none;
     position: fixed;
@@ -846,49 +832,47 @@
 }
 
 .modal-body img {
-    display: block; /* Elimina espacio en línea */
-    max-width: 100%; /* Máximo del contenedor */
-    height: auto; /* Mantiene proporción */
-    width: auto; /* Mantiene ancho original */
-    margin: 20px auto; /* Centra las imágenes con margen */
+    display: block; 
+    max-width: 100%;
+    height: auto;
+    width: auto; 
+    margin: 20px auto;
 }
 
-/* Modal específico para periódicos */
 .modal-periodico .modal-dialog {
-    max-width: 95vw; /* Usa casi toda la pantalla */
-    width: 95vw; /* Ancho fijo */
-    margin: 2.5vh auto; /* Centrado vertical */
+    max-width: 95vw;
+    width: 95vw;
+    margin: 2.5vh auto;
 }
 
 .modal-periodico .modal-content {
-    max-height: 95vh; /* Altura máxima */
-    height: 95vh; /* Altura fija */
+    max-height: 95vh;
+    height: 95vh;
 }
 
 .modal-periodico .modal-body {
-    height: calc(95vh - 120px); /* Ajusta según header/footer */
+    height: calc(95vh - 120px);
     overflow-y: auto;
     padding: 30px;
     text-align: center;
 }
 
 .modal-periodico img {
-    display: block; /* Elimina espacio en línea */
-    max-width: 100%; /* Máximo del contenedor */
-    height: auto; /* Mantiene proporción */
-    width: auto; /* Mantiene ancho original */
-    margin: 20px auto; /* Centra las imágenes con margen */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin: 20px auto;
 }
 
-/* Si quieres que sean exactamente su tamaño original */
 .modal-periodico img:not(.ajustada) {
     max-width: none;
     width: auto !important;
 }
 
 .modal-cuento .modal-body {
-    max-height: 80vh; /* Altura máxima */
-    overflow-y: auto; /* Scroll vertical */
+    max-height: 80vh;
+    overflow-y: auto;
     padding: 20px;
 }
 
